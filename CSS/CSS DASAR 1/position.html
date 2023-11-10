@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION CSS</title>
+</head>
+<style>
+
+        .first-box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        position: relative;
+        left: 200px;
+    }
+
+    #second-box {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(53, 235, 114);
+        position: absolute;
+        left: 300px;
+    }
+    
+
+    .tree-box {
+        width: 100px;
+        height: 100px;
+        background-color: hsl(0, 29%, 36%);
+        left: 100px;
+        position: fixed;
+    }
+
+    .four-box {
+        width: 100px;
+        height: 1000px;
+        background-color: hsl(304, 84%, 48%);
+    }
+</style>
+<body>
+    <!-- Absolute 
+    Relative Tidak mempengaruhi elmen lain atau tidak ikut 
+    berpindah berbeda dengan absolute dan fixed
+    Fixed -->
+    <div class="first-box">Relative</div>
+    <div id="second-box">Absolute</div>
+    <div class="tree-box">Fixed</div>
+    <div class="four-box">ALL</div>
+</body>
+</html>

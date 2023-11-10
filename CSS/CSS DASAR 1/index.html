@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline, internal, dan eksternal CSS</title>
+    <!-- Eksternal CSS -->
+    <link rel="stylesheet" href="CSS Dasar.css">
+</head>
+<!-- Internal CSS -->
+<style>
+    p {
+        color: darkgrey
+    }
+
+    /* Selector CSS */
+    h4{
+        color: #754141;
+    }
+
+    #paragraf {
+        color: #754141;
+    }
+
+    .isi {
+        color: aquamarine;
+    }
+    /* END Selector CSS */
+
+    
+</style>
+<!-- END Internal CSS -->
+<body>
+    <p>ini adalah internal css</p>
+
+    <!-- Inline CSS -->
+    <h2 style="color: aqua;">Ini Adalah Inline CSS</h2>
+    <!-- END Inline CSS --> 
+
+    <h1 class="Eksternal"> Ini adalah Eksternal CSS</h1>
+    <h3>Ini adalah eksternal css 2</h3>
+
+    <h4>Ini Pemanggilan Selector CSS </h4>
+    <p id="paragraf">pemanggilan selector id</p>
+    <p class="isi">penaggilan selector class</p>
+
+    <div class="div">
+        <h1>Ini adalah pemanggilan css pada div</h1>
+        <h1>saya CSS</h1>
+    </div>
+
+    <!-- COLOR CSS -->
+    <div class="first-box"> </div>
+    <div id="second-box"></div>
+    <div class="tree-box"></div>
+    <div class="four-box"></div>
+</body>
+</html>
