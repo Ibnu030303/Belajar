@@ -33,4 +33,4 @@ const address = {
     city: 'cirebon',
     code: '45121'
 }
-console.log(address.city);
+console.log(address);
