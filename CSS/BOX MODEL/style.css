@@ -1,0 +1,89 @@
+html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-image: url(img/email-pattern.png);
+}
+
+.container {
+    width: 800px;
+    background-color: white;
+    margin: auto;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hero {
+    height: 280px;
+    background-image: url(img/hero.png);
+    background-size: cover;
+    background-position: 0 -120px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightskyblue;
+    margin-top: -5px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.content .penulis {
+    font-size: 13px;
+}
+
+.content .penulis a {
+    text-decoration: none;
+    color: salmon;
+}
+
+.content p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.footer {
+    background-color: #333;
+    padding: 15px;
+}
+
+.footer .copy {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}

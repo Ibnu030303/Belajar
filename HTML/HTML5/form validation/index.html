@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Vlidation</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    form {
+        width: 600px;
+        padding: 20px;
+    }
+
+    form div {
+        margin: 10px;
+    }
+
+    label {
+        display: block;
+    }
+
+    input:invalid,
+    input:required:invalid {
+        border: none;
+        outline: 2px solid red;
+        border-radius: 2px;
+    }
+
+    input:valid {
+        border: 1px solid black;
+        outline: inherit;
+        border-radius: inherit;
+    }
+</style>
+<body>
+    <form action="" method="post" autocomplete="off">
+        <div class="">
+            <label for="nama">Masukan Nama :</label>
+            <input type="text" name="nama" id="nama" autofocus required minlength="2" maxlength="5" oninvalid="this.setCustomValidity('ini harus di isi')" oninput="this.setCustomValidity('')">
+        </div>
+        <div class="">
+            <label for="email">Masukan email :</label>
+            <input type="email" name="email" id="email" >
+        </div>
+        <div class="">
+            <label for="nohp">Masukan No Hp :</label>
+            <input type="tel" name="nohp" id="nohp" pattern="(\+62|62|0)8[0-9][0-9]{11,13}$" >
+        </div>
+        <div class="">
+            <label for="url">Masukan URL Website :</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <div class="">
+            <label for="number">Masukan number :</label>
+            <input type="number" name="number" id="number" min="10" max="100" step="5">
+        </div>
+        <div class="">
+            <label for="range">Masukan range :</label>
+            <span class="awal"></span>
+            <input type="range" name="range" id="range" min="0" max="100" step="5">
+            <span class="akhir"></span>
+        </div>
+        <div class="">
+            <label for="date">Masukan date :</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div class="">
+            <label for="week">Masukan week :</label>
+            <input type="week" name="week" id="week">
+        </div>
+        <div class="">
+            <label for="time">Masukan time :</label>
+            <input type="time" name="time" id="time">
+        </div>
+        <div class="">
+            <label for="month">Masukan month :</label>
+            <input type="month" name="month" id="month">
+        </div>
+        <div class="">
+            <label for="color">Masukan color :</label>
+            <input type="color" name="color" id="color">
+            <span class="hexa"></span>
+        </div>
+        <div class="">
+            <label for="kodepos">Masukan kodepos :</label>
+            <input type="text" name="kodepos" id="kodepos" pattern="^([1-9])[0-9]{3}$">
+        </div>
+        <div class="">
+            <button type="submit">Kirim!</button>
+        </div>
+    </form>
+
+    <script>
+        const range = document.querySelector('#range');
+        const awal = document.querySelector('.awal');
+        const akhir = document.querySelector('.akhir');
+
+        awal.innerHTML = range.min;
+        akhir.innerHTML = range.value;
+        range.addEventListener('input', function() {
+            akhir.innerHTML = range.value;
+        });
+
+        const color = document.querySelector('#color');
+        const hexa = document.querySelector('.hexa');
+
+        hexa.innerHTML = color.value;
+        color.addEventListener('input', function() {
+            hexa.innerHTML = color.value;
+            hexa.style.color = color.value;
+        })
+    </script>
+</body>
+</html>

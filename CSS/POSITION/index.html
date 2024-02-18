@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position CSS</title>
+</head>
+<style> 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .kotak  {
+        background-color: black;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        bottom: 100px;
+        right: 100px;
+        opacity: .7;
+    }
+
+    .content {
+        color: white;
+    }
+
+    .close {
+        background-color: white;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        border-radius: 50%;
+        top: -7px;
+        right: -7px;
+        border: 3px solid black;
+    }
+</style>
+<body>
+    <div class="kotak">
+        <div class="content">
+            <h1>Hello world</h1>
+            <h2>Selamat Datang di WebSite Saya</h2>
+        </div>
+        
+        <div class="close"></div>
+    </div>
+
+    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum reiciendis, doloribus, earum nihil quasi minus aliquid beatae architecto possimus similique culpa, vero minima obcaecati. Qui adipisci fuga tempore eaque illo!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi eum eius sed ea, incidunt reiciendis modi. Odio et cupiditate optio praesentium ex nostrum, nesciunt dolores impedit modi quibusdam magnam ab voluptatem error nulla aut magni nam aliquid! Iure ducimus neque rem magnam distinctio magni explicabo iste, laboriosam possimus esse accusantium? Labore suscipit sit pariatur laboriosam quos explicabo reiciendis temporibus praesentium tenetur officiis reprehenderit voluptatum modi, animi facilis neque fugiat sequi voluptatem vel sunt illum quaerat quasi at velit. Quibusdam, pariatur aliquam! Atque eius magnam, quibusdam provident ipsa sequi temporibus dignissimos. Nihil provident ipsam itaque, cupiditate repellat mollitia in vitae laudantium!</p>
+</body>
+</html>

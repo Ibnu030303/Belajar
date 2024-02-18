@@ -1,0 +1,129 @@
+html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaeaea;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-image: url(img/email-pattern.png);
+}
+
+.container {
+    width: 960px;
+    background-color: white;
+    margin: auto;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+.hero {
+    height: 380px;
+    background-image: url(img/hero.png);
+    background-size: cover;
+    background-position: 0 -120px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightskyblue;
+    margin-top: -5px;
+}
+
+.main {
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.main .penulis {
+    font-size: 13px;
+}
+
+.main .penulis a {
+    text-decoration: none;
+    color: salmon;
+}
+
+.main p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    color: #666;
+}
+
+.sidebar img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p {
+    font-size: 12px;
+    line-height: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    background-color: #333;
+    padding: 15px;
+}
+
+.footer .copy {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
